@@ -22,7 +22,7 @@ capitalizeListTitles = false
   description = 'A blog by prinke on theology and software.'
   author = 'prinke'
   wordmarkLight = 'Lux'
-  colophon = 'Set in EB Garamond and Cormorant, with code in JetBrains Mono. Built with Hugo.'
+  colophon = 'Set in EB Garamond and Cormorant, with code in JetBrains Mono. Built with Hugo. Writing licensed [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).'
 
   # The three post sections, their markers, accent colors and margin art.
   postSections = ['theologia', 'machina', 'miscellanea']
@@ -57,7 +57,7 @@ capitalizeListTitles = false
     repo = 'prinke/lux-in-tenebris'
     repoId = 'R_kgDOVtlcWA'
     category = 'Comments'
-    categoryId = ''  # fill in after creating the Comments category
+    categoryId = 'DIC_kwDOVtlcWM4DLEzz'
 
 [pagination]
   pagerSize = 20

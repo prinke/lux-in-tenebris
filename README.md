@@ -50,4 +50,8 @@ Site-only tweaks can go in `assets/css/custom.css`, `i18n/en.toml` and
 
 ## License
 
-The code in this repository is under the [GNU General Public License v3.0](LICENSE).
+- **Writing** (the posts and pages in `content/`, and their images unless noted otherwise):
+  [Creative Commons Attribution-ShareAlike 4.0](LICENSE-CONTENT). Share and adapt it freely,
+  with credit and a link back, under the same license.
+- **Code** (everything else: configuration, templates, scripts, styles):
+  [GNU General Public License v3.0](LICENSE). The Scriptorium theme is GPLv3 as well.
