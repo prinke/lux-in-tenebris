@@ -1,7 +1,0 @@
-{{- with . }}{{ if gt .TotalPages 1 }}
-<nav class="pagination" aria-label="Pages">
-  {{- if .HasPrev }}<a href="{{ .Prev.URL }}" rel="prev">← Later leaves</a>{{ else }}<span></span>{{ end }}
-  <span class="folio">Folio {{ partial "roman.html" .PageNumber }} of {{ partial "roman.html" .TotalPages }}</span>
-  {{- if .HasNext }}<a href="{{ .Next.URL }}" rel="next">Earlier leaves →</a>{{ else }}<span></span>{{ end }}
-</nav>
-{{- end }}{{ end }}

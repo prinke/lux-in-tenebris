@@ -1,7 +1,7 @@
 baseURL = 'https://lux.prinke.dev/'
 locale = 'en-us'
 title = 'Lux in Tenebris'
-theme = 'Scriptorium'
+theme = 'scriptorium'
 capitalizeListTitles = false
 
 [markup]
@@ -23,6 +23,25 @@ capitalizeListTitles = false
   author = 'prinke'
   wordmarkLight = 'Lux'
   colophon = 'Set in EB Garamond and Cormorant, with code in JetBrains Mono. Built with Hugo.'
+
+  # The three post sections, their markers, accent colors and margin art.
+  postSections = ['theologia', 'machina', 'miscellanea']
+  [params.topics.theologia]
+    label = 'Theologia'
+    glyph = '✠'
+    accent = 'rubric'
+    art = 'tracery'
+  [params.topics.machina]
+    label = 'Machina'
+    glyph = '{ }'
+    monoglyph = true
+    accent = 'verdigris'
+    art = 'circuit'
+  [params.topics.miscellanea]
+    label = 'Miscellanea'
+    glyph = '¶'
+    accent = 'lapis'
+    art = 'vine'
 
   # Blue Letter Bible ScriptTagger: verse pop-ups on scripture references in post bodies.
   # https://www.blueletterbible.org/webtools/BLB_ScriptTagger.cfm

@@ -1,0 +1,3 @@
+[submodule "themes/scriptorium"]
+	path = themes/scriptorium
+	url = https://github.com/prinke/scriptorium.git

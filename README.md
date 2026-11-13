@@ -2,34 +2,52 @@
 
 Source for **Lux in Tenebris**, a blog by prinke on theology, software and other things,
 at [lux.prinke.dev](https://lux.prinke.dev). Built with [Hugo](https://gohugo.io) and
-**Scriptorium**, a custom Dark Academia theme in `themes/`.
+[Scriptorium](https://github.com/prinke/scriptorium), a Dark Academia theme included here
+as a git submodule. Comments are handled by [Giscus](https://giscus.app) through this
+repository's Discussions.
+
+## Get it
+
+```sh
+git clone --recurse-submodules https://github.com/prinke/lux-in-tenebris.git
+```
+
+If you already cloned without submodules: `git submodule update --init`.
 
 ## Run it
 
 ```sh
-hugo server
+hugo server -D
 ```
 
-Requires Hugo 0.146 or newer (the standard edition is enough).
+Requires Hugo 0.158 or newer (the standard edition is enough).
 
 ## Layout
 
 | Path | What it holds |
 |---|---|
 | `content/` | Published posts: `theologia/`, `machina/`, `miscellanea/`, plus About, Search, Catalogue, Index |
-| `themes/Scriptorium/` | The theme: layouts, CSS, self-hosted fonts, shortcodes. Its design rules are in [`STYLEGUIDE.md`](themes/Scriptorium/STYLEGUIDE.md) |
+| `hugo.toml` | Site settings, section labels and colors, ScriptTagger and Giscus |
+| `themes/scriptorium/` | The theme (submodule). Its design rules are in `STYLEGUIDE.md` there |
 | `config/development/` | Settings used only by `hugo server` |
 | `drafts/` | Not in this repository. Unfinished posts live in a separate private repository cloned here; `hugo server` previews them, production builds ignore them |
 
-## Writing features
+## Changing the theme
 
-Scripture quotations with verse numbers, margin notes, Greek and Hebrew text,
-Latin-labelled callouts (`> [!NB]`, `> [!CAVEAT]`, `> [!ERGO]`), captioned image plates,
-code blocks with filenames, and Blue Letter Bible verse pop-ups. See the theme's
-style guide for the syntax.
+Theme changes go to the theme's own repository:
 
-## Fonts
+```sh
+cd themes/scriptorium
+# edit, then
+git commit -am "…" && git push
+cd ../..
+git add themes/scriptorium && git commit -m "Update theme"
+```
 
-EB Garamond, Cormorant Garamond, UnifrakturMaguntia, JetBrains Mono and Frank Ruhl Libre,
-all under the SIL Open Font License. See
-[`themes/Scriptorium/static/fonts/OFL.txt`](themes/Scriptorium/static/fonts/OFL.txt).
+To pull the latest theme: `git submodule update --remote themes/scriptorium`, then commit.
+Site-only tweaks can go in `assets/css/custom.css`, `i18n/en.toml` and
+`layouts/_partials/hooks/` without touching the theme.
+
+## License
+
+The code in this repository is under the [GNU General Public License v3.0](LICENSE).
