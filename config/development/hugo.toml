@@ -1,0 +1,10 @@
+# Used only by `hugo server` (the development environment), never by a production `hugo` build.
+# Merges the private drafts/ repo into content/ so unfinished posts can be previewed locally.
+# If drafts/ isn't cloned on this machine, Hugo simply skips it.
+[[module.mounts]]
+  source = 'content'
+  target = 'content'
+[[module.mounts]]
+  source = 'drafts'
+  target = 'content'
+  files = ['! README.md']

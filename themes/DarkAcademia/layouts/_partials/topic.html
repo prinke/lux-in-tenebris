@@ -1,0 +1,3 @@
+{{- /* Label and glyph for a page's section, from params.topics. */ -}}
+{{- $t := index site.Params.topics .Section | default dict -}}
+{{- return dict "label" ($t.label | default .Section) "glyph" ($t.glyph | default "") "mono" ($t.monoglyph | default false) -}}

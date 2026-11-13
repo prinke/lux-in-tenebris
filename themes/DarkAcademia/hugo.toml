@@ -1,0 +1,58 @@
+# Defaults for the DarkAcademia theme. Anything here can be overridden in the site's hugo.toml.
+
+[params]
+  postSections = ['theologia', 'machina', 'miscellanea']
+  wordmarkLight = ''   # a word in the title to set in gold, e.g. 'Lux'
+  marginArt = true     # Gothic tracery in the side margins on wide screens
+
+  [params.topics.theologia]
+    label = 'Theologia'
+    glyph = '✠'
+  [params.topics.machina]
+    label = 'Machina'
+    glyph = '{ }'
+    monoglyph = true
+  [params.topics.miscellanea]
+    label = 'Miscellanea'
+    glyph = '¶'
+
+  # Blue Letter Bible ScriptTagger (verse pop-ups on scripture references).
+  # https://www.blueletterbible.org/webtools/BLB_ScriptTagger.cfm
+  [params.scriptTagger]
+    enable = true
+    translation = 'ESV'          # any BLB abbreviation: KJV, NKJV, NASB95, ESV, CSB…
+    hyperLinks = 'hover'         # 'all' relinks your own links too; 'hover' keeps them; 'none'
+    hideTranslationAbbrev = false
+    targetNewWindow = true
+    style = 'par'                # 'par' or 'line'
+    noSearchTagNames = 'h1 h2 h3 h4 pre code nav'
+    noSearchClassNames = ''      # extra classes to skip; only the post body is ever tagged
+
+  [params.giscus]
+    repo = ''
+    repoId = ''
+    category = ''
+    categoryId = ''
+    mapping = 'pathname'
+
+# Note: Hugo does not read [markup] from a theme. Copy this into the site's hugo.toml:
+# [markup]
+#   [markup.goldmark.renderer]
+#     unsafe = true
+#   [markup.highlight]
+#     noClasses = false
+#   [markup.tableOfContents]
+#     startLevel = 2
+#     endLevel = 3
+
+# Search index output, used by content/search.md (outputs = ['html', 'SearchIndex']).
+[outputFormats.SearchIndex]
+  mediaType = 'application/json'
+  baseName = 'index'
+  isPlainText = true
+  notAlternative = true
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = '0.146.0'

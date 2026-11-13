@@ -1,0 +1,12 @@
+# Private drafts live in their own repository, cloned here.
+/drafts/
+
+# Hugo build output and caches
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+.hugo_build.lock
+
+# Local tool settings
+/.claude/
+.DS_Store

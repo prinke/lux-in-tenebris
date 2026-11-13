@@ -1,0 +1,73 @@
+baseURL = 'https://prinke.dev/'
+locale = 'en-us'
+title = 'Lux in Tenebris'
+theme = 'DarkAcademia'
+capitalizeListTitles = false
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true   # allow inline HTML in posts (e.g. <cite>, shortcodes nested in sidenotes)
+  [markup.goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false   # lets an image on its own line become a captioned plate
+    [markup.goldmark.parser.attribute]
+      block = true
+  [markup.highlight]
+    noClasses = false   # the theme colors code via CSS classes
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[params]
+  tagline = 'Notes on God, grammar, and the machines we write.'
+  description = 'A blog by prinke on theology and software.'
+  author = 'prinke'
+  wordmarkLight = 'Lux'
+  colophon = 'Set in EB Garamond and Cormorant, with code in JetBrains Mono. Built with Hugo.'
+
+  # Blue Letter Bible ScriptTagger: verse pop-ups on scripture references in post bodies.
+  # https://www.blueletterbible.org/webtools/BLB_ScriptTagger.cfm
+  [params.scriptTagger]
+    enable = true
+    translation = 'ESV'          # any BLB abbreviation: KJV, NKJV, NASB95, ESV, CSB…
+    hyperLinks = 'hover'         # 'all' relinks your own links too; 'hover' keeps them; 'none'
+    style = 'par'                # 'par' or 'line'
+    noSearchClassNames = ''      # extra classes to skip; only the post body is ever tagged
+
+  # Fill these in from https://giscus.app once Discussions are enabled on the repo.
+  [params.giscus]
+    repo = ''        # e.g. 'prinke/prinke.dev'
+    repoId = ''
+    category = 'Comments'
+    categoryId = ''
+
+[pagination]
+  pagerSize = 20
+
+[taxonomies]
+  tag = 'tags'
+
+[menus]
+  [[menus.main]]
+    name = 'Theologia'
+    pageRef = '/theologia'
+    weight = 10
+  [[menus.main]]
+    name = 'Machina'
+    pageRef = '/machina'
+    weight = 20
+  [[menus.main]]
+    name = 'Miscellanea'
+    pageRef = '/miscellanea'
+    weight = 25
+  [[menus.main]]
+    name = 'Catalogue'
+    pageRef = '/catalogue'
+    weight = 30
+  [[menus.main]]
+    name = 'Index'
+    pageRef = '/tags'
+    weight = 40
+  [[menus.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 50
