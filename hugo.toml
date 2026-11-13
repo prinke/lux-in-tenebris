@@ -58,6 +58,7 @@ capitalizeListTitles = false
     repoId = 'R_kgDOVtlcWA'
     category = 'Comments'
     categoryId = 'DIC_kwDOVtlcWM4DLEzz'
+    reactions = false
 
 # giscus.app loads the comment theme and its fonts from your site inside its iframe, which
 # needs a CORS header. This covers `hugo server`; static/_headers covers Netlify and Cloudflare Pages.
