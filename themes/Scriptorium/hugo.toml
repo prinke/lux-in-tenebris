@@ -1,4 +1,4 @@
-# Defaults for the DarkAcademia theme. Anything here can be overridden in the site's hugo.toml.
+# Defaults for the Scriptorium theme. Anything here can be overridden in the site's hugo.toml.
 
 [params]
   postSections = ['theologia', 'machina', 'miscellanea']

@@ -1,7 +1,7 @@
-baseURL = 'https://prinke.dev/'
+baseURL = 'https://lux.prinke.dev/'
 locale = 'en-us'
 title = 'Lux in Tenebris'
-theme = 'DarkAcademia'
+theme = 'Scriptorium'
 capitalizeListTitles = false
 
 [markup]
@@ -35,7 +35,7 @@ capitalizeListTitles = false
 
   # Fill these in from https://giscus.app once Discussions are enabled on the repo.
   [params.giscus]
-    repo = ''        # e.g. 'prinke/prinke.dev'
+    repo = ''        # e.g. 'prinke/lux-in-tenebris'
     repoId = ''
     category = 'Comments'
     categoryId = ''

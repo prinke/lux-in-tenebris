@@ -1,4 +1,4 @@
-# DarkAcademia — Theme Guideline
+# Scriptorium — Theme Guideline
 
 A personal blog theme for writing on **technology / software** and **theology**.
 This document is the source of truth while building the theme: every color,
@@ -297,7 +297,7 @@ blood-drip effects, heavy background photography.
 
 ## 10. Decisions
 
-- [x] Site title: **Lux in Tenebris** (John 1:5; provisional), "Lux" set in gold. Tagline: *Notes on God, grammar, and the machines we write.* Domain prinke.dev
+- [x] Site title: **Lux in Tenebris** (John 1:5; provisional), "Lux" set in gold. Tagline: *Notes on God, grammar, and the machines we write.* Lives at lux.prinke.dev for now
 - [x] Sections: **Theologia** (`/theologia/`, ✠, rubric), **Machina** (`/machina/`, `{ }`, verdigris) and **Miscellanea** (`/miscellanea/`, ¶, lapis) for general writing. Post numbers run across all three.
 - [x] Roman numerals: post numbers (*No. XII*) and footer year (*MMXXVI*); dates stay Arabic
 - [x] Comments: **Giscus**, under the heading *Responsa*, with a custom theme CSS built from the tokens

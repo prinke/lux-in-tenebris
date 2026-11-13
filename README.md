@@ -1,8 +1,8 @@
-# prinke.dev
+# Lux in Tenebris
 
 Source for **Lux in Tenebris**, a blog by prinke on theology, software and other things,
-at [prinke.dev](https://prinke.dev). Built with [Hugo](https://gohugo.io) and a custom
-Dark Academia theme, `DarkAcademia`, in `themes/`.
+at [lux.prinke.dev](https://lux.prinke.dev). Built with [Hugo](https://gohugo.io) and
+**Scriptorium**, a custom Dark Academia theme in `themes/`.
 
 ## Run it
 
@@ -17,7 +17,7 @@ Requires Hugo 0.146 or newer (the standard edition is enough).
 | Path | What it holds |
 |---|---|
 | `content/` | Published posts: `theologia/`, `machina/`, `miscellanea/`, plus About, Search, Catalogue, Index |
-| `themes/DarkAcademia/` | The theme: layouts, CSS, self-hosted fonts, shortcodes. Its design rules are in [`STYLEGUIDE.md`](themes/DarkAcademia/STYLEGUIDE.md) |
+| `themes/Scriptorium/` | The theme: layouts, CSS, self-hosted fonts, shortcodes. Its design rules are in [`STYLEGUIDE.md`](themes/Scriptorium/STYLEGUIDE.md) |
 | `config/development/` | Settings used only by `hugo server` |
 | `drafts/` | Not in this repository. Unfinished posts live in a separate private repository cloned here; `hugo server` previews them, production builds ignore them |
 
@@ -32,4 +32,4 @@ style guide for the syntax.
 
 EB Garamond, Cormorant Garamond, UnifrakturMaguntia, JetBrains Mono and Frank Ruhl Libre,
 all under the SIL Open Font License. See
-[`themes/DarkAcademia/static/fonts/OFL.txt`](themes/DarkAcademia/static/fonts/OFL.txt).
+[`themes/Scriptorium/static/fonts/OFL.txt`](themes/Scriptorium/static/fonts/OFL.txt).
