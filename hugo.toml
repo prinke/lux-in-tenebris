@@ -54,10 +54,10 @@ capitalizeListTitles = false
 
   # Fill these in from https://giscus.app once Discussions are enabled on the repo.
   [params.giscus]
-    repo = ''        # e.g. 'prinke/lux-in-tenebris'
-    repoId = ''
+    repo = 'prinke/lux-in-tenebris'
+    repoId = 'R_kgDOVtlcWA'
     category = 'Comments'
-    categoryId = ''
+    categoryId = ''  # fill in after creating the Comments category
 
 [pagination]
   pagerSize = 20
