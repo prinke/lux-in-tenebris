@@ -1,0 +1,5 @@
+# Netlify / Cloudflare Pages: giscus.app loads the comment theme and fonts from this site.
+/giscus/*
+  Access-Control-Allow-Origin: *
+/fonts/*
+  Access-Control-Allow-Origin: *
